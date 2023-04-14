@@ -40,6 +40,9 @@ public class Bird : MonoBehaviour
         _ridgidbody2D.isKinematic = false;
         _ridgidbody2D.AddForce(direction * _launchForce);
 
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
         _spriteRenderer.color = Color.white;
         IsDragging = false;
     }
