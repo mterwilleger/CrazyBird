@@ -5,24 +5,24 @@ using UnityEngine;
 public class DragLine : MonoBehaviour
 {
     LineRenderer _lineRenderer;
-    Bird _bird;
+    Player _player;
 
     // Start is called before the first frame update
     void Start()
     {
         _lineRenderer = GetComponent<LineRenderer>();
-        _bird = FindObjectOfType<Bird>();
+        _player = FindObjectOfType<Player>();
 
-        Vector3 lineZeroPosition = new Vector3(_bird.transform.position.x, _bird.transform.position.y, -0.1f);
+        Vector3 lineZeroPosition = new Vector3(_player.transform.position.x, _player.transform.position.y, -0.1f);
         _lineRenderer.SetPosition(0, lineZeroPosition);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_bird.IsDragging)
+        if (_player.IsDragging)
         {
-            _lineRenderer.SetPosition(0, _bird.transform.position);
+            _lineRenderer.SetPosition(0, _player.transform.position);
             _lineRenderer.enabled = true;
         }
         else

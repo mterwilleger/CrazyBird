@@ -42,8 +42,8 @@ public class Monster : MonoBehaviour
         if (_hasDied)
             return false;
 
-        Bird bird = collision.gameObject.GetComponent<Bird>();
-        if (bird != null)
+        Player player = collision.gameObject.GetComponent<Player>();
+        if (player != null)
             return true;
 
         if (collision.contacts[0].normal.y < -0.5)
