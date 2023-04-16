@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4909477395706053277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.59, y: -2.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4909477396646301624}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6376e65d5cd1502458f627e6f98265e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a507e4d319138d44482579bc5610a9e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.42, y: 0.34}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,23 +135,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17999999, y: -0.48999998}
-      - {x: 0.28, y: -0.32}
-      - {x: 0.29, y: -0.19999999}
-      - {x: 0.29, y: 0.12}
-      - {x: 0.25, y: 0.19999999}
-      - {x: 0.12, y: 0.32999998}
-      - {x: 0.14, y: 0.45999998}
-      - {x: 0.089999996, y: 0.5}
-      - {x: -0.049999997, y: 0.5}
-      - {x: -0.28, y: 0.19999999}
-      - {x: -0.29, y: 0.099999994}
-      - {x: -0.29, y: -0.22}
-      - {x: -0.26999998, y: -0.26999998}
-      - {x: -0.26, y: -0.31}
-      - {x: -0.22, y: -0.35}
-      - {x: -0.19999999, y: -0.5}
-      - {x: 0.16, y: -0.5}
+    - - {x: 0.37, y: 0.024999999}
+      - {x: 0.19, y: 0.205}
+      - {x: -0.19999999, y: 0.205}
+      - {x: -0.37, y: -0.005}
+      - {x: -0.37, y: -0.145}
+      - {x: -0.34, y: -0.175}
+      - {x: -0.13, y: -0.225}
+      - {x: 0.089999996, y: -0.225}
+      - {x: 0.22999999, y: -0.195}
+      - {x: 0.32999998, y: -0.16499999}
+      - {x: 0.37, y: -0.145}
 --- !u!114 &4909477395706053275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e028119cbb29074bb038e264417f078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deadSprite: {fileID: 21300000, guid: 70a60dad9c6f2aa42941b53edf1428e9, type: 3}
+  _deadSprite: {fileID: 21300000, guid: a507e4d319138d44482579bc5610a9e5, type: 3}
   _particleSystem: {fileID: 4909477396646301626}
 --- !u!82 &2389283560380626122
 AudioSource:
@@ -176,7 +170,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7308471640867193156, guid: fe11912940803df4f9d6bc5a6fcd7cd4, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 86001c5f5dcb9024a886595da884020e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4add0af0ed7b7a24196969ccf3d4bca9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
