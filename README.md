@@ -1,4 +1,4 @@
-# GalexyCrasher
+# GalaxyCrasher
  
 https://mterwilleger.github.io/CrazyBird/
 
